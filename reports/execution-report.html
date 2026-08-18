@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GlobalLearn Selenium Execution Report</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+th { background: #eee; }
+.blocked { font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>GlobalLearn Selenium Execution Report</h1>
+<p><strong>Status:</strong> NOT EXECUTED IN THE SUBMISSION ENVIRONMENT</p>
+<p>
+The automation source code is complete, but a real authenticated Selenium browser session
+could not be executed in the current tool environment. The staging host could be opened as
+a web page, but browser-driver execution/network DNS access was unavailable here.
+Therefore this document must not be presented as a fabricated PASS report.
+</p>
+
+<h2>Sample test cases</h2>
+<table>
+<tr><th>ID</th><th>Test Case</th><th>Status</th><th>Reason</th></tr>
+<tr><td>L1</td><td>Welcome message on first login</td><td class="blocked">Blocked</td><td>Requires first-login state and configured welcome content.</td></tr>
+<tr><td>L2</td><td>Welcome message on each login</td><td class="blocked">Blocked</td><td>Requires configured each-login welcome content.</td></tr>
+<tr><td>L3</td><td>Single course with certificate</td><td class="blocked">Blocked</td><td>Requires an enrolled certificate-enabled course and activity.</td></tr>
+<tr><td>L4</td><td>E-sign flow</td><td class="blocked">Blocked</td><td>Requires a configured eSign course and learner state.</td></tr>
+<tr><td>L5</td><td>My profile block</td><td class="blocked">Blocked</td><td>Requires known learner profile values.</td></tr>
+<tr><td>L6</td><td>Enrolled courses and logout</td><td class="blocked">Blocked</td><td>Requires the learner's actual enrolled-course list.</td></tr>
+</table>
+
+<h2>Additional tests</h2>
+<table>
+<tr><th>ID</th><th>Test</th><th>Status</th></tr>
+<tr><td>A1</td><td>Login page loads</td><td class="blocked">Not executed</td></tr>
+<tr><td>A2</td><td>Next button enabled</td><td class="blocked">Not executed</td></tr>
+<tr><td>A3</td><td>Blank email rejected</td><td class="blocked">Not executed</td></tr>
+<tr><td>A4</td><td>Invalid email rejected</td><td class="blocked">Not executed</td></tr>
+<tr><td>A5</td><td>Logout ends session</td><td class="blocked">Not executed</td></tr>
+<tr><td>A6</td><td>Dashboard requires login</td><td class="blocked">Not executed</td></tr>
+</table>
+
+<h2>Observed / known points</h2>
+<ul>
+<li>The supplied login URL is reachable.</li>
+<li>The test specification contains six learner-only PDC cases.</li>
+<li>Several cases depend on backend-configured learner data that was not included in the assignment.</li>
+<li>Credentials are externalized through environment variables rather than committed to source code.</li>
+</ul>
+</body>
+</html>

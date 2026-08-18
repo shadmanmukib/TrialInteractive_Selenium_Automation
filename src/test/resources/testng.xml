@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GlobalLearn Learner PDC Suite" verbose="1">
+    <test name="Learner PDC Tests">
+        <classes>
+            <class name="com.trialinteractive.tests.LearnerPdcTests"/>
+            <class name="com.trialinteractive.tests.AdditionalTests"/>
+        </classes>
+    </test>
+</suite>
